@@ -2,19 +2,19 @@ version: '3'
 services:
 # Frontend node server
   frontend:
-    build: ./QinIssue.Frontend
+    image: velden.azurecr.io/solution_frontend
     depends_on:
       - server
       - proxy
     ports:
-      - 4200:4200
+      - 4200:80
     networks:
       - envoymesh
     volumes:
       - ./QinIssue.Frontend:/usr/src/app:rw
 # GPRC Server
   server:
-    build: .
+    image: velden.azurecr.io/solution_server
     ports:
       - 50051:50051
     networks:
@@ -26,7 +26,6 @@ services:
       NODE_ENV: development
     ports:
       - 8080:8080
-      - 8081:8081
     volumes:
       - ./envoy.yaml:/etc/envoy/envoy.yaml
     networks:

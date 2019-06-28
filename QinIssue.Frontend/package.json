@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:prod": "ng serve --host 0.0.0.0 --prod=true",
     "build": "ng build",
     "compile": "protoc --plugin=protoc-gen-ts=.\\node_modules\\.bin\\protoc-gen-ts.cmd --js_out=import_style=commonjs,binary:src/app/models --ts_out=service=true:src/app/models -I ../protos/ ../protos/models.proto",
     "test": "ng test",
