@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QinIssue.Server", "QinIssue
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QinIssue", "QinIssue\QinIssue.csproj", "{27CDC400-3436-46E7-AEAD-EB87B8690DA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QinIssue.Frontend", "QinIssue.Frontend\QinIssue.Frontend.csproj", "{B6F50C3F-E352-4CFC-8605-AA0B849559CC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{27CDC400-3436-46E7-AEAD-EB87B8690DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27CDC400-3436-46E7-AEAD-EB87B8690DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27CDC400-3436-46E7-AEAD-EB87B8690DA9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B6F50C3F-E352-4CFC-8605-AA0B849559CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6F50C3F-E352-4CFC-8605-AA0B849559CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6F50C3F-E352-4CFC-8605-AA0B849559CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6F50C3F-E352-4CFC-8605-AA0B849559CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

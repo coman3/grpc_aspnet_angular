@@ -5,6 +5,9 @@ import { IssueComponent } from './issue/issue.component';
 const routes: Routes = [
   {
     path: 'issues', component: IssueComponent
+  },
+  {
+    path: '**', redirectTo: "/issues"
   }
 ];
 

@@ -35,7 +35,7 @@ namespace QinIssue.Server.Services.Grpc
 
         public override Task<IssueList> GetIssues(GetIssue request, ServerCallContext context)
         {
-            var issues = repo.GetIssues().Where(x => x.Title.ToLower().Contains(request.TitleContains.ToLower()));
+            var issues = repo.GetIssues().Where(x => request.TitleContains.Length <= 0 || x.Title.ToLower().Contains(request.TitleContains.ToLower()));
             var issuesList = new IssueList();
             issuesList.Issues.Add(issues);
             return Task.FromResult(issuesList);
