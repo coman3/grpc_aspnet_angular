@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+
+option csharp_namespace = "QinIssue.Models";
+
+package QinIssue;
+
+
+service IssueService {
+  rpc CreateIssue(NewIssue) returns (BoolStatus) {}
+  rpc GetIssues(GetIssue) returns (IssueList) {}
+
+}
+message BoolStatus {
+  bool completed = 1;
+}
+
+message NewIssue {
+  string title = 1;
+}
+
+message GetIssue {
+  string titleContains = 1;
+}
+
+
+message Issue {
+  string id = 1;
+  string title = 2;
+  bool resolved = 3;
+}
+
+message IssueList {
+  repeated Issue issues = 1;
+}

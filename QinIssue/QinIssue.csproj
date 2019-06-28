@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Protobuf GrpcServices="Server" Include="../protos/models.proto" Link="models.proto" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Protobuf" Version="3.9.0-rc1" />
+    <PackageReference Include="Grpc" Version="1.22.0-pre1" PrivateAssets="All" />
+    <PackageReference Include="Grpc.Tools" Version="1.22.0-pre1" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
