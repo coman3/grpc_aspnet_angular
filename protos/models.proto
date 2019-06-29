@@ -10,6 +10,7 @@ service IssueService {
   rpc CreateIssue(NewIssue) returns (BoolStatus) {}
   rpc GetIssues(GetIssue) returns (IssueList) {}
 
+
 }
 message BoolStatus {
   bool completed = 1;

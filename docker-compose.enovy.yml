@@ -1,0 +1,12 @@
+version: '3'
+services:
+  proxy:
+    image: envoyproxy/envoy-alpine
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8080:8080
+      - 8081:8081
+    volumes:
+      - ./envoy.local.yaml:/etc/envoy/envoy.yaml
+  
