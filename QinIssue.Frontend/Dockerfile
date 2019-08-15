@@ -1,4 +1,4 @@
-FROM node:latest 
+FROM node:8 
 # Install required tools
 run npm install -g @angular/cli
 

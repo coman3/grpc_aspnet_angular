@@ -2,14 +2,14 @@
   "name": "qin-issue",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "start:prod": "ng serve --host 0.0.0.0 --prod=true",
-    "build": "ng build",
+    "ng": "npx ng",
+    "start": "npx ng serve",
+    "start:prod": "npx ng serve --host 0.0.0.0 --prod=true",
+    "build": "npx ng build",
     "compile": "protoc --plugin=protoc-gen-ts=.\\node_modules\\.bin\\protoc-gen-ts.cmd --js_out=import_style=commonjs,binary:src/app/models --ts_out=service=true:src/app/models -I ../protos/ ../protos/models.proto",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "test": "npx ng test",
+    "lint": "npx ng lint",
+    "e2e": "npx ng e2e"
   },
   "private": true,
   "dependencies": {
