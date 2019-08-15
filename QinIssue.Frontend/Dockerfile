@@ -1,4 +1,6 @@
-FROM node:8
+FROM node:latest 
+# Install required tools
+run npm install -g @angular/cli
 
 # Create app directory
 RUN mkdir -p /usr/src/app
