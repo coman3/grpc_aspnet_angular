@@ -48,7 +48,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  final channel = new ClientChannel('localhost',
+  final channel = new ClientChannel('10.0.0.9',
       port: 50051,
       options: const ChannelOptions(
           credentials: const ChannelCredentials.insecure()));

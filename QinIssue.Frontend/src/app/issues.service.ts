@@ -10,7 +10,7 @@ export class IssuesService {
   client: IssueServiceClient;
 
   constructor() {
-    this.client = new IssueServiceClient('http://localhost:8080');
+    this.client = new IssueServiceClient('http://dev.vdv.xyz:8080');
   }
 
   getIssues(titleFilter: string): Promise<Issue.AsObject[]> {
